@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> </title>
+   <style type="text/css">
+   	
+     .all{
+     	border: 2px solid black;
+     	padding-left: 230px;
+     	background: gray;
+     }
+
+     #button{
+     	color: red;
+     	background: black;
+     	padding-top: 7px;
+     	padding-bottom: 7px;
+     	padding-left: 15px;
+     	padding-right: 15px;
+     	font-size: 25px;
+
+
+     }
+     button{
+     	padding-left: 80px;
+     }
+     h1{
+     	color: purple;
+
+     }
+     
+     
+     #form{
+     	color: white;
+     	font-family:cursive;
+     	font-size: 20px;
+
+     }
+     a{
+     	color: ghostwhite;
+     	font-size: 15px;
+     }
+     #input{
+     	color: black;
+     	background: wheat;
+     	padding-top: 8px;
+     	padding-left: 10px;
+     	padding-right: 10px;
+     	padding-bottom: 8px;
+     }
+     p{
+     	color: yellow;
+     	font-family: cursive;
+     	font-weight: bold;
+     	font-size: 20px;
+     }
+     
+
+
+
+
+   </style>
+
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		var avgg,per;
+		function percentage(){
+			var avgg=document.getElementById("one");
+			console.log(avgg);
+			var percentage=document.getElementById("two");
+			console.log(per);
+
+		var a=parseInt((subjects.a.value));
+		var b=parseInt((subjects.b.value));
+        var c=parseInt((subjects.c.value));
+        var d=parseInt((subjects.d.value));
+        var e=parseInt((subjects.e.value));
+        avg=(a+b+c+d+e)/5;
+        per=(a+b+c+d+e)*100/500;
+        avgg.innerHTML=avg;
+        console.log("avg",avg);
+        percentage.innerHTML=per;
+        console.log("per",per);
+    }
+	</script>
+
+</head>
+<body>
+	<div class="all">
+		<h1><u>hello students</u></h1>
+		<a>eassy to calculate your percantage<br>
+		enter your marks here and click on <mark> submit</mark>button</a>
+
+		<br><br>
+
+	<form name="subjects" id="form">
+		<label>maths</label><br>
+		<input id="input" type="text" name="a"><br>
+         
+         <label>hindi</label><br>
+		<input id="input" type="text" name="b"><br>
+
+        <label>english</label><br>
+		<input id="input" type="text" name="c"><br>
+         
+         <label>physics</label><br>
+		<input id="input" type="text" name="d"><br>
+  
+         <label>chemistry</label><br>
+		<input id="input" type="text" name="e"><br>
+	</form><br><br>
+	<button id="button" onclick="percentage()">submit</button>
+	<p>avg:</p><p id="one"></p>
+	<p>percentage:</p><p id="two"></p> 
+</div>
+
+
+
+</form>
+
+</body>
+</html>
